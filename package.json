@@ -1,4 +1,14 @@
 {
   "name": "md-links",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "desciption": "Uma biblioteca com a finalidade de analisar arquivos markdown e listar seus links",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/larissamiyaji/SAP004-md-links"
+  },
+  "author": "Larissa Natsumi Miyaji",
+  "bin": {
+    "say-hello": "./cli.js"
+  }
 }
