@@ -6,6 +6,10 @@
   "author": "Larissa Natsumi Miyaji",
   "license": "ISC",
   "bin": {
-    "say-hello": "./cli.js"
+    "md-links": "./cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larissamiyaji/SAP004-md-links.git"
   }
 }
