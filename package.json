@@ -28,5 +28,6 @@
   "homepage": "https://github.com/larissamiyaji/SAP004-md-links#readme",
   "bin": {
     "md-links": "cli.js"
-  }
+  },
+  "dependencies": {}
 }
