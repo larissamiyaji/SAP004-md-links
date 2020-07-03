@@ -2,8 +2,8 @@
 
 //  Grab provided args.
 const [, , ...args] = process.argv;
-const http = require("https");
-const chalk = require('chalk');
+const chalk = require("chalk");
+const mdLinks = require("index.js")
 //  Print Hello World provided args.
 console.log(chalk.cyan(`Oi, Deus. Sou eu de novo ${chalk.magenta(args)}`));
 
@@ -24,3 +24,5 @@ console.log(chalk.cyan(`Oi, Deus. Sou eu de novo ${chalk.magenta(args)}`));
 //  console.log(chalk.bgMagenta("Hello"));
 //  console.log(chalk.bgCyan("Hello"));
 //  console.log(chalk.bgWhite("Hello"));
+
+//  const http = require("https");
