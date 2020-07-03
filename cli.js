@@ -5,7 +5,7 @@ const [, , ...args] = process.argv;
 const http = require("https");
 const chalk = require('chalk');
 //  Print Hello World provided args.
-console.log(chalk.magenta(`Oi, Deus. Sou eu de novo ${chalk.yellow(args)}`));
+console.log(chalk.cyan(`Oi, Deus. Sou eu de novo ${chalk.magenta(args)}`));
 
 
 //          Cores do Chalk
