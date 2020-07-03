@@ -11,7 +11,7 @@ function mdLinks(file){
         rejected(err.message);
       } else {
         const regex = data.match(/\[([^\[\]]+)\]\((https?:\/\/[^\)]*)\)/gm);
-        const 
+        const mapText = regex.map //  Continuar função de mapeamento dos links
       }
     })
   })
