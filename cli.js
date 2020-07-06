@@ -1,28 +1,12 @@
 #!/usr/bin/env node
-
-//  Grab provided args.
-const [, , ...args] = process.argv;
-const chalk = require("chalk");
-const mdLinks = require("index.js")
-//  Print Hello World provided args.
-console.log(chalk.cyan(`Oi, Deus. Sou eu de novo ${chalk.magenta(args)}`));
+//  Esse documento irá chamar e manipular a função mdLinks criada no index.js 👌
 
 
-//          Cores do Chalk
-//  console.log(chalk.red("Hello"));
-//  console.log(chalk.green("Hello"));
-//  console.log(chalk.yellow("Hello"));
-//  console.log(chalk.blue("Hello"));
-//  console.log(chalk.magenta("Hello"));
-//  console.log(chalk.cyan("Hello"));
-//  console.log(chalk.white("Hello"));
-//  console.log(chalk.gray("Hello"));
-//  console.log(chalk.bgRed("Hello"));
-//  console.log(chalk.bgGreen("Hello"));
-//  console.log(chalk.bgYellow("Hello"));
-//  console.log(chalk.bgBlue("Hello"));
-//  console.log(chalk.bgMagenta("Hello"));
-//  console.log(chalk.bgCyan("Hello"));
-//  console.log(chalk.bgWhite("Hello"));
+const chalk = require("chalk"); //  Pra deixar o console mais colorido e eu ficar feliz 😃
+const [, , ...args] = process.argv; //  Pega os argumentos passados
+//  const http = require("https"); //   Isso eu não lembro porque coloquei aqui... 😒
+//  const mdLinks = require("./index.js"); //   Importando a função mdLinks do index.js 👌
 
-//  const http = require("https");
+console.log(chalk.cyan(`Oi, Deus. Sou eu de novo ${chalk.magenta(args)}`)); //  Printa "Hello World" + os argumentos dados
+
+//  mdLinks.then().catch(); //  Fazer a promise
