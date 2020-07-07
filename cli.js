@@ -9,15 +9,14 @@ const links = function () {
   mdLinks(filePosition)
     .then((mapText) => {
       mapText.forEach((element) => {
-        console.log(chalk.green.bold(`Nome: ${element.text}, Link: ${element.href}, Documento: ${element.file}`));
+        console.log(
+          chalk.green.bold(`Nome: ${element.text}`),
+          chalk.yellow.bold(`Link: ${element.href}`),
+          chalk.grey.bold(`Documento: ${element.file}`)
+        );
       });
     })
-    .catch(console.log("Erro"));
+    .catch(console.log("Houve algum erro"));
 };
 
 links(filePosition);
-
-//  console.log(chalk.cyan(`Oi, Deus. Sou eu de novo ${chalk.magenta(args)}`)); //  Printa "Hello World" + os argumentos dados
-//  const [, , ...args] = process.argv; //  Pega os argumentos passados
-//  console.log(chalk.green.bold("Deu certo")))
-//  .catch(console.log(chalk.red.bold("Deu erro")));
