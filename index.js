@@ -5,7 +5,7 @@ function mdLinks(file) {
   return new Promise((resolved, rejected) => {
     fs.readFile(file, "utf-8", (err, data) => {
       //  "data" é o conteúdo dentro do arquivo
-      console.log(file); // Lê a 1ª linha do documento index.js e diz se é um diretório (pelo menos isso, Senhor 🙌) [[[Pensar em como fazer ler o resto]]]
+      console.log(file); // Lê a 1ª linha do documento index.js e diz se é um diretório
       console.log(data); // Lê todo o conteúdo do README.md com o comando "node index.js README.md"
       console.log(err);
       if (err) {
@@ -14,7 +14,7 @@ function mdLinks(file) {
         const regex = data.match(/\[([^\[\]]+)\]\((https?:\/\/[^\)]*)\)/gm);
         const mapText = regex.map((item) => {
           const splitText = item.split("](");
-          const text = splitText[0].replace("\n", "");
+          const text = splitText[0].replace("[", "");
           const href = splitText[1];
           return { text, href, file };
         });
