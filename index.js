@@ -6,9 +6,9 @@ function mdLinks(file) {
   return new Promise((resolved, rejected) => {
     fs.readFile(file, "utf-8", (err, data) => {
       //  "data" é o conteúdo dentro do arquivo
-      console.log(chalk.cyan.bold("O arquivo lido é: "), chalk.greenBright.bold(file)); // Mostra qual o arquivo está sendo lido (README.md)
-      console.log(chalk.magenta.bold(data)); // Lê todo o conteúdo do README.md com o comando "node index.js README.md"
-      console.log(chalk.red.bold("Não há erros por enquanto"));
+      //  console.log(chalk.cyan.bold("O arquivo lido é: "), chalk.greenBright.bold(file)); // Mostra qual o arquivo está sendo lido (README.md)
+      //  console.log(chalk.magenta.bold(data)); // Lê todo o conteúdo do README.md com o comando "node index.js README.md"
+      //  console.log(chalk.red.bold("Verificar erro"));
       if (err) {
         rejected(err.message);
       } else {
@@ -16,7 +16,7 @@ function mdLinks(file) {
         const mapText = regex.map((item) => {
           const splitText = item.split("](");
           const text = splitText[0].replace("[", "");
-          const href = splitText[1]
+          const href = splitText[1];
           return { text, href, file };
         });
         resolved(mapText);
