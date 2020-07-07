@@ -1,13 +1,14 @@
 //  Este arquivo deve exportar a função mdLinks que será chamada na cli.js 👌
 const fs = require("fs");
+const chalk = require("chalk");
 
 function mdLinks(file) {
   return new Promise((resolved, rejected) => {
     fs.readFile(file, "utf-8", (err, data) => {
       //  "data" é o conteúdo dentro do arquivo
-      console.log(file); // Lê a 1ª linha do documento index.js e diz se é um diretório
-      console.log(data); // Lê todo o conteúdo do README.md com o comando "node index.js README.md"
-      console.log(err);
+      console.log(chalk.cyan.bold("O arquivo lido é: "), chalk.greenBright.bold(file)); // Lê qual o arquivo está sendo lido (README.md)
+      console.log(chalk.magenta.bold(data)); // Lê todo o conteúdo do README.md com o comando "node index.js README.md"
+      console.log(chalk.red.bold("Não há erros por enquanto")); // "null"
       if (err) {
         rejected(err.message);
       } else {
@@ -30,4 +31,3 @@ mdLinks(filePosition); //  Mostra o README.md no terminal
 module.exports = mdLinks;
 
 //  const regex = /\[([^\[\]]+)\]\((https?:\/\/[^\)]*)\)/gm; // Regex para Markdown
-//  const file = []; //  Guardar temporariamente os arquivos.
