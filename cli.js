@@ -11,19 +11,11 @@ const links = function () {
     .then((mapText) => {
        // console.log(mapText); //  Retorna o array de objetos do mapText
       mapText.forEach((element) => {
-        let linksArray = linksEmptyArray.push(/*"Testando")*/ //  Aparece números muito doidos
+        let linksArray = linksEmptyArray.push(
           console.log(chalk.green.bold(`Nome: ${element.text}`)),
           console.log(chalk.yellow.bold(`Link: ${element.href}`)),
           console.log(chalk.grey.bold(`Documento: ${element.file}`)));
           console.log("----------"); // Deixar separado cada link
-        //  console.log(linksArray); // Aparece números muito doidos
-        //  console.log(linksEmptyArray); //  Aparece como "undefined"
-
-        /*console.log(
-          chalk.green.bold(`Nome: ${element.text}`),
-          chalk.yellow.bold(`Link: ${element.href}`),
-          chalk.grey.bold(`Documento: ${element.file}`)
-        );*/
       });
     })
     .catch(console.log("Erro"));
