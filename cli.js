@@ -9,7 +9,7 @@ let linksEmptyArray = [];
 const links = function () {
   mdLinks(filePosition)
     .then((mapText) => {
-        console.log(mapText); //  Retorna o array de objetos do mapText
+       // console.log(mapText); //  Retorna o array de objetos do mapText
       mapText.forEach((element) => {
         let linksArray = linksEmptyArray.push(/*"Testando")*/ //  Aparece números muito doidos
           console.log(chalk.green.bold(`Nome: ${element.text}`)),
