@@ -12,7 +12,7 @@ function mdLinks(file) {
       if (err) {
         rejected(err.message);
       } else {
-        const regex = data.match(/\[([^\[\]]+)\]\((https?:\/\/[^\)]*)\)/gm);
+        const regex = data.match(/\[([^\[\]]+)\]\((https?:\/\/[^\)]*)/gm);
         const mapText = regex.map((item) => {
           const splitText = item.split("](");
           const text = splitText[0].replace("[", "");
