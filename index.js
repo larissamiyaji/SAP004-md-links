@@ -25,3 +25,6 @@ const filePosition = process.argv[2]; //  Pega o arquivo na posição 2 da CLI
 mdLinks(filePosition); //  Mostra o README.md no terminal
 
 module.exports = mdLinks;
+
+//  Função Validate  :::::::::::::::::::::::::::::::::::::::
+const fetch = require("node-fetch");

@@ -4,6 +4,7 @@
 const chalk = require("chalk");
 const mdLinks = require("./index.js");
 const filePosition = process.argv[2]; //  Pega o arquivo na posição 2 da CLI
+//   const fetch - require("node-fetch");
 
 let linksEmptyArray = [];
 const links = function () {
@@ -25,4 +26,3 @@ const links = function () {
 links(filePosition);
 
 //Função Validate (verifica se o link funciona ou não)
-const axios = require("axios");
