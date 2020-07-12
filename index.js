@@ -1,6 +1,4 @@
-//  Este arquivo deve exportar a função mdLinks que será chamada na cli.js 👌
 const fs = require("fs");
-const chalk = require("chalk");
 
 function mdLinks(file) {
   return new Promise((resolved, rejected) => {
@@ -25,6 +23,3 @@ const filePosition = process.argv[2]; //  Pega o arquivo na posição 2 da CLI
 mdLinks(filePosition); //  Mostra o README.md no terminal
 
 module.exports = mdLinks;
-
-//  Função Validate  :::::::::::::::::::::::::::::::::::::::
-const fetch = require("node-fetch");

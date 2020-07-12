@@ -20,9 +20,7 @@ const links = function () {
         console.log("----------"); // Deixar separado cada link
       });
     })
-    //  .catch(console.log("Erro"));
+    .catch(console.log("Erro"));
 };
 
 links(filePosition);
-
-//Função Validate (verifica se o link funciona ou não)
