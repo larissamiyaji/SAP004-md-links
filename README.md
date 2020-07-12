@@ -33,6 +33,7 @@ Por exemplo: `md-links README.md`
 O resultado trazido virá em formato de lista, como mostrado a seguir:
 
 ![Demonstração md-links](https://giphy.com/gifs/fUkuVREFPbkynsFQbq)
+<iframe src="https://giphy.com/embed/fUkuVREFPbkynsFQbq" width="480" height="257" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/fUkuVREFPbkynsFQbq">via GIPHY</a></p>
 
 
 ### Javascript
