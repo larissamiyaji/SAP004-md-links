@@ -34,7 +34,7 @@ O resultado trazido virá em formato de lista, como mostrado a seguir:
 
 ![Demonstração md-links](https://giphy.com/gifs/fUkuVREFPbkynsFQbq)
 
-<img src="https://giphy.com/gifs/fUkuVREFPbkynsFQbq" width="480" height="257" frameBorder="0" class="giphy-embed"/>
+<img src="Images\mdlinks demonstração.gif" width="100%" />
 
 ### Javascript
 
