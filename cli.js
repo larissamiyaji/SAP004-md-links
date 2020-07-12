@@ -20,7 +20,7 @@ const links = function () {
         console.log("----------"); // Deixar separado cada link
       });
     })
-    .catch(console.log("Erro"));
+    //  .catch(console.log("Erro"));
 };
 
 links(filePosition);
