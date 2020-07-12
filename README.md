@@ -32,6 +32,7 @@ Por exemplo: `md-links README.md`
 
 O resultado trazido virá em formato de lista, como mostrado a seguir:
 
+![Demonstração md-links](Images\mdlinksGIF.gif)
 
 
 ### Javascript
