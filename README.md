@@ -7,7 +7,6 @@
 * [3. Uso](#3-Uso)
 * [4. Implementações Futuras](#4-implementações-futuras)
 
-
 ***
 
 ## 1. Prefácio
@@ -18,7 +17,7 @@ Essa é uma biblioteca criada para ler arquivos Markdown e encontrar os links qu
 
 Para utilizar essa biblioteca, primeiramente faça um clone deste repositório.
 
-* Para instalar via terminal, rode o seguinte comando:
+* Para instalar globalmente via terminal, rode o seguinte comando:
 
 `npm install -g larissamiyaji/SAP004-md-links`
 
