@@ -30,7 +30,12 @@ Para utilizar a biblioteca basta rodar no terminal o seguinte comando:
 
 Por exemplo: `md-links teste.md`
 
-O resultado trazido virá em formato de lista, como mostrado a seguir:
+O resultado trazido virá em formato de lista com 3 tópicos cada:
+`Nome:
+Link:
+Documento:`
+
+como mostrado a seguir:
 
 <img src="Images\mdlinks demonstração.gif" width="480" height="257" frameBorder="0" class="giphy-embed"/>
 
