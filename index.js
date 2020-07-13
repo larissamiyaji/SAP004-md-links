@@ -19,7 +19,7 @@ function mdLinks(file) {
   });
 }
 
-const filePosition = process.argv[2]; //  Pega o arquivo na posição 2 da CLI
-mdLinks(filePosition); //  Mostra o README.md no terminal
+const filePosition = process.argv[2];
+mdLinks(filePosition);
 
 module.exports = mdLinks;
