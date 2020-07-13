@@ -14,7 +14,6 @@ const links = function () {
           console.log(chalk.yellow.bold(`Link: ${element.href}`)),
           console.log(chalk.grey.bold(`Documento: ${element.file}`))
         );
-        console.log("----------");
       });
     })
     .catch(console.log("Erro"));
