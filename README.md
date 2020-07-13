@@ -20,7 +20,7 @@ Para utilizar essa biblioteca, primeiramente faça um clone deste repositório.
 
 * Para instalar via terminal, rode o seguinte comando:
 
-`npm install larissamiyaji/SAP004-md-links`
+`npm install -g larissamiyaji/SAP004-md-links`
 
 ## 3. Uso
 
@@ -28,7 +28,7 @@ Para utilizar a biblioteca basta rodar no terminal o seguinte comando:
 
 `md-links [nome-do-arquivo-md]`
 
-Por exemplo: `md-links README.md`
+Por exemplo: `md-links teste.md`
 
 O resultado trazido virá em formato de lista, como mostrado a seguir:
 
